@@ -1,0 +1,10 @@
+.pio/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*~
