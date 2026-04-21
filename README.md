@@ -23,6 +23,8 @@ The Arduino drives a strict three-wire protocol to read those 16 bits:
    shifts the next bit onto `DATA`. The first bit is already presented on
    `DATA` right after the latch, so we read *before* clocking.
 
+![LATCH, CLOCK, and DATA timing](doc/timing.svg)
+
 The whole read takes roughly 200 µs and `loop()` repeats it every 50 ms
 (~20 Hz polling), which is plenty for a 60 Hz game input.
 
